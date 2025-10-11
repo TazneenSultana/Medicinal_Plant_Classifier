@@ -1,0 +1,36 @@
+```
+# This file lists the Python packages required to run your Gradio app.
+
+# 1. Gradio (Mandatory for the Web UI)
+
+gradio
+
+# 2. Core Libraries for ML and Image Processing
+
+numpy
+Pillow
+joblib  # Added: Used for loading the class labels dictionary (.pkl file)
+
+# 3. Deep Learning Framework (Uncomment the one you used)
+
+# ----------------------------------------------------------------
+
+# If you used TensorFlow or Keras:
+
+tensorflow # Uncommented: Required for load_model and image preprocessing
+h5py  # Often required for loading .h5 or SavedModel formats
+
+# OR
+
+# If you used PyTorch:
+
+# torch
+
+# torchvision
+
+# ----------------------------------------------------------------
+
+# 4. If you used Hugging Face (e.g., pipeline, model loading, or datasets)
+
+# transformers
+```
