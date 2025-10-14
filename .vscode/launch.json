@@ -1,0 +1,19 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File (Gradio App)",
+            "type": "python",
+            "request": "launch",
+            "program": "${file}",
+            "console": "integratedTerminal",
+            // *** CRITICAL FIX: Set the absolute path to your Conda environment's Python executable. ***
+            // You may need to verify this path is correct for your user directory.
+            "pythonPath": "C:\\Users\\User\\anaconda3\\envs\\plant_classifier_env\\python.exe",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
