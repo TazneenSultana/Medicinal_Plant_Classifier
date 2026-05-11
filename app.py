@@ -229,7 +229,7 @@ def classify_plant(image: Image.Image):
 # =========================================================
 # ...........................................
 
-with gr.Blocks(theme=gr.themes.Default(primary_hue="red", secondary_hue="pink")) as iface:
+with gr.Blocks(theme=gr.themes.Default(primary_hue="green", secondary_hue="lime")) as iface:
     gr.Markdown("# 🌱 Scan Your Medicinal Leaf with AI")
     #gr.Markdown("Upload an image of a medicinal plant leaf. This model was trained for 40 epochs.")
 
