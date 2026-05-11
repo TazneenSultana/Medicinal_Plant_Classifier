@@ -230,9 +230,9 @@ def classify_plant(image: Image.Image):
 # Custom CSS to force green...............
 
 with gr.Blocks(theme=gr.themes.Default(
-        primary_hue="green", 
-        secondary_hue="lime",
-        neutral_hue="slate"
+        primary_hue=gr.themes.colors.green, 
+        secondary_hue=gr.themes.colors.lime,
+        neutral_hue=gr.themes.colors.slate
     ), title="Medicinal Plant Classifier") as iface:
     gr.Markdown("# 🌱 Scan Your Medicinal Leaf with AI")
     #gr.Markdown("Upload an image of a medicinal plant leaf. This model was trained for 40 epochs.")
