@@ -1,8 +1,8 @@
 ---
 title: Medicinal Plant Classifier
 emoji: 🏆
-colorFrom: red
-colorTo: pink
+colorFrom: green
+colorTo: lime
 sdk: gradio
 sdk_version: 5.49.1
 app_file: app.py
