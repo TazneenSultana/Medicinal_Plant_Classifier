@@ -227,7 +227,9 @@ def classify_plant(image: Image.Image):
 # =========================================================
 # 6. GRADIO INTERFACE
 # =========================================================
-with gr.Blocks(theme=gr.themes.Soft(primary_hue="green"), title="Medicinal Plant Classifier") as iface:
+# Custom CSS to force green buttons
+css = ".green { background-color: #2e7d32 !important; color: white !important; }"
+with gr.Blocks(css=css, theme=gr.themes.Soft(), title="Medicinal Plant Classifier") as iface:
     gr.Markdown("# 🌱 Scan Your Medicinal Leaf with AI")
     #gr.Markdown("Upload an image of a medicinal plant leaf. This model was trained for 40 epochs.")
 
@@ -235,8 +237,8 @@ with gr.Blocks(theme=gr.themes.Soft(primary_hue="green"), title="Medicinal Plant
         with gr.Column(scale=1):
             image_input = gr.Image(type="pil", label="Upload Leaf Image")
             with gr.Row():
-                submit_button = gr.Button("Submit", variant="primary")
-                clear_button = gr.Button("Clear", variant="secondary")
+                submit_button = gr.Button("Submit", variant="primary", elem_classes="green")
+                clear_button = gr.Button("Clear", variant="secondary", elem_classes="green")
 
         with gr.Column(scale=1):
             final_output_label = gr.Label(
