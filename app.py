@@ -241,8 +241,8 @@ with gr.Blocks(theme=gr.themes.Default(
         with gr.Column(scale=1):
             image_input = gr.Image(type="pil", label="Upload Leaf Image")
             with gr.Row():
-                submit_button = gr.Button("Submit", variant="primary", elem_classes="green")
-                clear_button = gr.Button("Clear", variant="secondary", elem_classes="green")
+                submit_button = gr.Button("Submit", variant="primary")
+                clear_button = gr.Button("Clear", variant="secondary")
 
         with gr.Column(scale=1):
             final_output_label = gr.Label(
