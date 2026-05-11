@@ -227,9 +227,9 @@ def classify_plant(image: Image.Image):
 # =========================================================
 # 6. GRADIO INTERFACE
 # =========================================================
-with gr.Blocks(theme=gr.themes.Soft(), title="Medicinal Plant Classifier") as iface:
+with gr.Blocks(theme=gr.themes.Soft(primary_hue="green"), title="Medicinal Plant Classifier") as iface:
     gr.Markdown("# 🌱 Scan Your Medicinal Leaf with AI")
-    gr.Markdown("Upload an image of a medicinal plant leaf. This model was trained for 40 epochs.")
+    #gr.Markdown("Upload an image of a medicinal plant leaf. This model was trained for 40 epochs.")
 
     with gr.Row():
         with gr.Column(scale=1):
